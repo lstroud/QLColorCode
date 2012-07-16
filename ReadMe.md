@@ -50,35 +50,34 @@ or, the maximum size (in bytes) for previewed files:
 `defaults write org.n8gray.QLColorCode maxFileSize 1000000`  
    
 Here are some useful 'highlight' command-line flags (from the man page):  
-	       > -F, --reformat=<style>  
-	              > reformat output in given style.   <style>=[ansi,  gnu,  kr,  
-	              > java, linux]  
-	> 
-	       > -J, --line-length=<num>  
-	              > line length before wrapping (see -W, -V)  
-	> 
-	       > -j, --line-number-length=<num>  
-	              > line number length incl. left padding  
-	> 
-	       > -l, --linenumbers  
-	              > print line numbers in output file  
-	> 
-	       > -t  --replace-tabs=<num>  
-	              > replace tabs by num spaces  
-	> 
-	       > -V, --wrap-simple  
-	              > wrap long lines without indenting function  parameters  and  
-	              > statements  
-	> 
-	       > -W, --wrap  
-	              > wrap long lines  
-	> 
-	       > -z, --zeroes  
-	              > fill leading space of line numbers with zeroes  
-	> 
-	       > --kw-case=<upper|lower|capitalize>  
-	              > control case of case insensitive keywords  
-	> 
-
+```	       -F, --reformat=<style>  
+	              reformat output in given style.   <style>=[ansi,  gnu,  kr,  
+	              java, linux]  
+	
+	       -J, --line-length=<num>  
+	              line length before wrapping (see -W, -V)  
+	
+	       -j, --line-number-length=<num>  
+	              line number length incl. left padding  
+	
+	       -l, --linenumbers  
+	              print line numbers in output file  
+	
+	       -t  --replace-tabs=<num>  
+	              replace tabs by num spaces  
+	
+	       -V, --wrap-simple  
+	              wrap long lines without indenting function  parameters  and  
+	              statements  
+	
+	       -W, --wrap  
+	              wrap long lines  
+	
+	       -z, --zeroes  
+	              fill leading space of line numbers with zeroes  
+	
+	       --kw-case=<upper|lower|capitalize>  
+	              control case of case insensitive keywords  
+```	
 
 If you have installed highlight into an alternate location, your will need to edit the paths in colorize.sh 
