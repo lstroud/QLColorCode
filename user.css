@@ -1,0 +1,18 @@
+/* content of user.css (adds border and a line 
+  to the line numbering) */
+  pre.hl {
+    border-width: 1px;
+    border-style:solid;
+    border-left-color: silver;
+    border-top-color: silver;
+    border-right-color: gray;
+    border-bottom-color: gray;
+  }
+
+  .hl.lin {
+/*    border-right:1px solid #555555;*/
+    padding-left:0.5em;
+    padding-right:0.5em;
+    margin-right:1em;
+    text-decoration:none;
+  }

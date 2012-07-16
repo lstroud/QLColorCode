@@ -19,6 +19,9 @@
 # Fail immediately on failure of sub-command
 setopt err_exit
 
+hlcmd=/usr/local/bin/highlight
+hlconfpath=/usr/local/share/highlight
+
 rsrcDir=$1
 target=$2
 thumb=$3
@@ -32,12 +35,9 @@ debug () {
 debug Starting colorize.sh
 #echo target is $target
 
-hlDir=$rsrcDir/highlight
-cmd=$hlDir/bin/highlight
-cmdOpts=(-I --font $font --quiet --add-data-dir $rsrcDir/override \
-         --data-dir $rsrcDir/highlight/share/highlight \
-         --add-config-dir $rsrcDir/override/config --style $hlTheme \
-         --font-size $fontSizePoints --encoding $textEncoding ${=extraHLFlags} --validate-input)
+
+cmd=$hlcmd
+cmdOpts=(-I --font $font --quiet --style $hlTheme --style-infile $hlconfpath/user.css --font-size $fontSizePoints --encoding $textEncoding ${=extraHLFlags} --validate-input)
 
 #for o in $cmdOpts; do echo $o\<br/\>; done 
 
