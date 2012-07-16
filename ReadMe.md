@@ -50,7 +50,8 @@ or, the maximum size (in bytes) for previewed files:
 `defaults write org.n8gray.QLColorCode maxFileSize 1000000`  
    
 Here are some useful 'highlight' command-line flags (from the man page):  
-```	       -F, --reformat=<style>  
+```	       
+         -F, --reformat=<style>  
 	              reformat output in given style.   <style>=[ansi,  gnu,  kr,  
 	              java, linux]  
 	
